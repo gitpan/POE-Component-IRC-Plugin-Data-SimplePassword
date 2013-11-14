@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::Data::SimplePassword;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 use base 'POE::Component::IRC::Plugin::BasePoCoWrap';
 use POE::Component::Data::SimplePassword;
@@ -59,6 +59,8 @@ sub _message_into_response_event { 'pass'; }
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

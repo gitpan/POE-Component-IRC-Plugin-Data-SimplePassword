@@ -13,7 +13,9 @@ my $builder = Module::Build->new(
     requires => {
         'POE::Component::IRC::Plugin::BasePoCoWrap' => 0.005,
         'POE::Component::Data::SimplePassword'      => 0.0101,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-Data-SimplePassword-*' ],
     create_makefile_pl => 'traditional',
 );
